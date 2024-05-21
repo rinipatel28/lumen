@@ -1,0 +1,69 @@
+/* General table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+th {
+    background-color: #009879;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+td input, td button {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+td button {
+    color: #ffffff;
+    background-color: #009879;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+td button:hover {
+    background-color: #007961;
+}
+
+/* Input styling */
+input[type="number"], input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="number"]:disabled, input[type="text"]:disabled {
+    background-color: #f3f3f3;
+}
+
+/* Alignment of the table headers and data */
+thead tr {
+    background-color: #009879;
+}
+
+/* Odd and even row colors to improve readability */
+tbody tr:nth-child(odd) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Hover effect for rows */
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
